@@ -1,21 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Hero from './components/Hero';
-import AboutUs from './AboutUs';
-import Navbar from './components/navbar';
+import { useState } from "react";
+import Hero from "./components/Hero";
+import AboutUs from "./AboutUs";
+import Navbar from "./components/Navbar";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showAbout, setShowAbout] = useState(false);
+
+  const handleToggle = () => {
+    setShowAbout(!showAbout);
+  };
 
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <AboutUs />
+      <Navbar />
+      <div className="container">
+        {showAbout ? <AboutUs /> : <Hero />}
+      </div>
+      <button onClick={handleToggle}>Toggle About Us</button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
