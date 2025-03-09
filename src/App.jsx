@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Hero from "./components/Hero";
 import AboutUs from "./AboutUs";
-import Navbar from "./components/Navbar";
 import "./App.css";
 
 function App() {
