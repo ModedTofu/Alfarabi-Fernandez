@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Hero from "./components/Hero";
-import AboutUs from "./AboutUs";
 import Navbar from "./components/navbar";
+import AboutUs from "./components/AboutUs";
 import "./App.css";
 
 function App() {
