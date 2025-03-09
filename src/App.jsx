@@ -7,18 +7,14 @@ import "./App.css";
 function App() {
   const [showAbout, setShowAbout] = useState(false);
 
-  const handleToggle = () => {
-    setShowAbout(!showAbout);
-  };
-
   return (
-    <>
-      <Navbar />
+    <div>
+      <Navbar setShowAbout={setShowAbout} />
       <div className="container">
-        {showAbout ? <AboutUs /> : <Hero />}
+        <Hero />
+        {showAbout && <AboutUs />}
       </div>
-      <button onClick={handleToggle}>Toggle About Us</button>
-    </>
+    </div>
   );
 }
 

@@ -1,10 +1,12 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #051f20;
-    padding: 1rem 2rem;
-    color: white;
+  width: 100%;
+  max-width: 1200px; /* Keeps it aligned */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
   }
   
   .logo {
@@ -15,7 +17,7 @@
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 20px;
   }
   
   .nav-links li {
