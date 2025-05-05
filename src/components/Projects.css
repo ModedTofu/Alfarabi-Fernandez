@@ -1,0 +1,17 @@
+.projects-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.projects-title {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+/* ... rest of the CSS content ... */

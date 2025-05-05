@@ -1,16 +1,24 @@
 import React from 'react';
-import './AboutUs.css'; // Optional: Add styles in AboutUs.css
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
     <div id="about-us" className="about-container">
-      <h1>About Us</h1>
+      <h1>About Me</h1>
       <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Hello! I'm AlFarabi Fernandez, a passionate frontend developer with a keen eye for creating beautiful, functional, and user-friendly websites. I specialize in building modern web applications using the latest technologies and best practices.
       </p>
       <p>
-        Our goal is to create user-friendly, modern, and highly functional applications using the latest technologies.
+        With a strong foundation in HTML, CSS, and JavaScript, I enjoy bringing designs to life and creating seamless user experiences. I'm constantly learning and exploring new technologies to stay at the forefront of web development.
       </p>
+      <p>
+        My goal is to create user-friendly, modern, and highly functional applications that not only meet but exceed client expectations.
+      </p>
+      <div className="about-buttons" style={{ marginTop: '25px' }}>
+        <Link to="/experience" className="btn">
+          <i className="fas fa-briefcase"></i> View My Experience
+        </Link>
+      </div>
     </div>
   );
 };

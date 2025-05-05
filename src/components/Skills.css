@@ -1,0 +1,215 @@
+.skills-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+  }
+  
+  .skills-title {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .skills-title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  
+  .skills-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .skills-card-title {
+    color: var(--accent-color);
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(157, 88, 31, 0.2);
+    border-radius: 8px;
+    color: var(--text-light);
+    font-size: 1.5rem;
+  }
+  
+  .tech-details {
+    flex: 1;
+  }
+  
+  .tech-name {
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .tech-level {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .tech-progress {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right, var(--accent-color), #e67e22);
+    transition: width 1.5s ease-in-out;
+  }
+  
+  .tech-description {
+    color: var(--text-light);
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .learning-path {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .learning-path-title {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .learning-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .learning-step {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .step-number {
+    width: 30px;
+    height: 30px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  
+  .step-content {
+    flex: 1;
+  }
+  
+  .step-title {
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .step-description {
+    color: var(--text-light);
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+  
+  .skills-footer {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--text-light);
+    opacity: 0.8;
+    font-style: italic;
+  }
+  
+  @media (max-width: 992px) {
+    .skills-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills-card {
+      padding: 20px;
+    }
+    
+    .tech-icon {
+      width: 35px;
+      height: 35px;
+      font-size: 1.2rem;
+    }
+    
+    .tech-name {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-card-title,
+    .learning-path-title {
+      font-size: 1.5rem;
+    }
+    
+    .tech-item {
+      gap: 10px;
+    }
+    
+    .tech-icon {
+      width: 30px;
+      height: 30px;
+      font-size: 1rem;
+    }
+  }
+  
